@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let beratJoan = 60;
+        let beratMadan = 55;
+        let tinggiJoan = 1.68;
+        let tinggiMadan = 1.63;
+
+        const imtJoan = beratJoan/(tinggiJoan ** 2);
+        const imtMadan = beratMadan/(tinggiMadan ** 2);
+
+        if (imtMadan > imtJoan) {
+            madanHigherIMT = true;
+        }else {
+            madanHigherIMT = false;
+        }
+
+        if (madanHigherIMT == true) {
+            madanHigherIMTText = ("IMT Madan lebih tinggi dari joan ")
+        } else {
+            madanHigherIMTText = ("IMT Madan lebih rendah dari joan ")
+        }
+
+        document.write(`berat Joan = ${beratJoan} `);
+
+        document.write(`berat Madan = ${beratMadan} `);
+
+        document.write(`tinggi joan = ${tinggiJoan} `);
+
+        document.write(`tinggi Madan = ${tinggiMadan} `);
+
+        document.write(`IMT Joan = 60/168 ** 2 = ${imtJoan} `);
+
+        document.write(`IMT Madan = 55/163 ** 2 = ${imtMadan} `);
+
+        document.write(`perbandingan IMT = ${madanHigherIMTText}`)
+    </script>
+</body>
+</html>
